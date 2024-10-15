@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "provider",
+						"type": "address"
+					}
+				],
+				"name": "autorizarProvedor",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getProprietario",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/RegistroMedico.sol": "HealthcareRegistro"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/RegistroMedico.sol": {
+			"keccak256": "0x85e5e82e5889dd39a79d9d04f178a5db2df50fdd4b5cdaa2c5cb7e3d91b56934",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1a8f32a2fa9091f053df9a8b1786515a5a4f04c23d18d2f6eb4b910c697b3619",
+				"dweb:/ipfs/QmfY7TkForVajshsWm8zGEYssPV5yBCuJovMeudqskommW"
+			]
+		}
+	},
+	"version": 1
+}

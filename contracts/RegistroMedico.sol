@@ -35,6 +35,18 @@ contract HealthcareRegistro {
         return proprietario;
     }
 
-    
+    function autorizarProvedor(address provider) public somenteProprietario {
+        provedorAutorizado[provider] = true;
+    }
+
+
+    function addRegistro(uint256 pacienteID, string memory pacienteNome, string memory diagnostico, string memory tratamento) public somenteProprietario{
+        uint256 registroID = registroPaciente[pacienteID].length +1;
+        registroPaciente[pacienteID].push(Registro(registroID, pacienteNome, diagnostico, tratamento, block.timestamp));
+    }
+
+    function getRegistroPaciente(uint256 pacienteID) public view somenteProvedorAutorizado returns (Registro[] memory) {
+        return registroPaciente[pacienteID];
+    }
 
 }
