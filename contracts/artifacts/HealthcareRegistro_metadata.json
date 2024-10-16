@@ -11,12 +11,32 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": true,
 						"internalType": "uint256",
 						"name": "pacienteID",
 						"type": "uint256"
 					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "registroID",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "pacienteNome",
+						"type": "string"
+					}
+				],
+				"name": "RegistroAdicionado",
+				"type": "event"
+			},
+			{
+				"inputs": [
 					{
 						"internalType": "string",
 						"name": "pacienteNome",
@@ -139,11 +159,11 @@
 	},
 	"sources": {
 		"contracts/RegistroMedico.sol": {
-			"keccak256": "0x1ef68bf932be416f7bec96eb7c5a155a934fd10331b037503d36ac55e4d964e2",
+			"keccak256": "0x4069cb2ffd81565a1409449e2971d7c6cacd981bd35a94f7f2cd3216700fb43f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5ee4a2f49a8f85c659a330f8df5d224daddaa916d1a8168dc6ce9c696f98afb6",
-				"dweb:/ipfs/QmdzzWCJWoESujj9KZTU5zVqmFp1UExQ9Gh1TGVbNkG2T4"
+				"bzz-raw://2115d669821a269b399b4e710ea3d029ed4dcf7fdb9fc29068213b12ce70cf98",
+				"dweb:/ipfs/QmcmhQr9HswGPATGEJ416Zos5LEv9FPhLrQrz5gWdQsj4j"
 			]
 		}
 	},
